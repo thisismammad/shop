@@ -13,7 +13,7 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 90%;
   border-radius: 15px;
-  padding:20px;
+  padding: 20px;
   margin: 10px 0;
   display: flex;
   flex-direction: column;
@@ -109,6 +109,8 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 800px;
+    padding: 50px;
   }
   .image-sec {
     display: flex;
@@ -121,18 +123,5 @@ main {
 @media screen and (max-height: 600px) {
   main {
     height: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .image-sec {
-    flex: 3;
-  }
-  .form-sec {
-    flex: 2;
-  }
-  .login-container {
-    max-width: 800px;
-    padding: 50px;
   }
 }
