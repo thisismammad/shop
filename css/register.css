@@ -6,6 +6,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: auto;
+  flex-wrap: wrap;
 }
 
 .login-container {
@@ -34,6 +35,7 @@ main {
 .form-sec .form form .input-group label {
   display: block;
   font-size: 0.9em;
+  margin-right: 10px;
 }
 .form-sec .form form .input-group input {
   margin: 10px 0;
@@ -48,6 +50,7 @@ main {
 }
 .form-sec .form form > span {
   font-size: 0.9em;
+  margin-right: 10px;
 }
 .form-sec .form form > span a {
   color: #d87355;
@@ -118,10 +121,5 @@ main {
   }
   .form-sec {
     flex: 1;
-  }
-}
-@media screen and (max-height: 600px) {
-  main {
-    height: auto;
   }
 }
