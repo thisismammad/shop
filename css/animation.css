@@ -7,3 +7,21 @@
     }
     
 }
+@-webkit-keyframes faidIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+@-moz-keyframes faidIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}

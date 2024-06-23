@@ -55,6 +55,8 @@ header nav .nav-left .register-login-btn a {
 .slider .slides.active {
   display: block;
   animation: faidIn 0.5s;
+  -moz-animation: faidIn 0.5s;
+  -webkit-animation: faidIn 0.5s;
 }
 .slider .slides .slide-img {
   width: 100%;
