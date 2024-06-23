@@ -95,7 +95,7 @@ main {
 .image-sec {
   display: none;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .image-sec .image-container {
   display: flex;
