@@ -13,14 +13,11 @@ main {
   width: 90%;
   border-radius: 15px;
   padding: 20px;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.form-sec {
-}
 .form-sec .form form {
   margin: 20px 0;
 }
@@ -29,9 +26,7 @@ main {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.form-sec .form form .input-group {
-  /* margin: 10px 0; */
-}
+
 .form-sec .form form .input-group label {
   display: block;
   font-size: 0.9em;
@@ -83,7 +78,7 @@ main {
   font-size: 1.5em;
 }
 .form-sec .social i {
-    color: #444;
+  color: #444;
 }
 
 .form-sec .social i:hover {

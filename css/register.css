@@ -1,7 +1,7 @@
 main {
   width: 100%;
   background-color: #56cbfa;
-  height:100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,8 +20,6 @@ main {
   justify-content: center;
 }
 
-.form-sec {
-}
 .form-sec .form form {
   margin: 20px 0;
 }
@@ -32,9 +30,6 @@ main {
   margin-bottom: 20px;
   width: 100%;
   text-align: center;
-}
-.form-sec .form form .input-group {
-  /* margin: 10px 0; */
 }
 .form-sec .form form .input-group label {
   display: block;
@@ -87,7 +82,7 @@ main {
   font-size: 1.5em;
 }
 .form-sec .social i {
-    color: #444;
+  color: #444;
 }
 
 .form-sec .social i:hover {
@@ -125,7 +120,7 @@ main {
 }
 @media screen and (max-height: 600px) {
   main {
-    height:auto;
+    height: auto;
   }
 }
 
