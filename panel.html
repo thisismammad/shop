@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/panel.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <title>پنل کاربری</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <i id="showHideMenu" class="fa-solid fa-bars"></i>
+                <div class="search-input">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="settings">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-power-off"></i>
+            </div>
+        </header>
+        <main>
+            <section class="main-right">
+            <aside>
+                <div class="profile-content">
+                    <div class="image-name">
+                        <img id="profileImage" src="./images/profiles/2606572_5907.svg" alt="">
+                        <span id="userName">محمد داوری</span>
+                        <i id="statusCircle" class="fa-solid fa-circle"></i>
+                        <i id="showHideStatus" class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="status">
+                        <div class="level">
+                            <span>سطح دسترسی:</span>
+                            <span>ادمین</span>
+                        </div>
+                        <span>آخرین ورود دو روز پیش</span>
+                    </div>
+                </div>
+                <menu>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-box menu-item-icon"></i>
+                        <span class="menu-item-name">محصولات</ class="menu-item-name">
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-cart-plus menu-item-icon"></i>
+                        <span class="menu-item-name">سفارش ها</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-regular fa-paste menu-item-icon"></i>
+                        <span class="menu-item-name">گزارش ها</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-user-group menu-item-icon"></i>
+                        <span class="menu-item-name">کاربر ها</span>
+                    </div>
+                    <div class="menu-item">
+                        <i class="fa-solid fa-headset menu-item-icon"></i>
+                        <span class="menu-item-name">پشتیبانی</span>
+                    </div>
+                </menu>
+            </aside>
+        </section>
+            <section class="main-left">
+            <div class="mini-cards">
+                <div class="mini-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="content">
+                        <span class="name">فروش</span>
+                        <span class="amount">400</span>
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="content">
+                        <span class="name">انبار</span>
+                        <span class="amount">100</span>
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="content">
+                        <span class="name">ارسالی</span>
+                        <span class="amount">1000</span>
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="content">
+                        <span class="name">سفارشات</span>
+                        <span class="amount">800</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="head">
+                    <span>درآمد</span>
+                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </section>
+        </main>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <Script src="./js/panel.js"></Script>
+</body>
+
+</html>

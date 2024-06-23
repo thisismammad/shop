@@ -1,0 +1,268 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* header section */
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+.container header .search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.container header .search-bar > i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.container header .search-bar .search-input {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+.container header .search-bar .search-input input {
+  background-color: #ffffff00;
+  outline: none;
+  border: none;
+}
+.container header .search-bar .search-input > i {
+  color: #888;
+}
+
+.container header .settings {
+  display: none;
+  gap: 20px;
+}
+
+.container header .settings > i {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+/* aside section */
+.container aside {
+  display: none;
+  width: 250px;
+  top: 45px;
+  position: absolute;
+  background-color: white;
+  grid-row: 1/-1;
+  height: 100%;
+  box-shadow: -5px 5px 5px #a09e9e0a;
+  transition: 0.5s;
+}
+
+.container aside .profile-content {
+  display: block;
+  padding: 20px 20px 0px 20px;
+}
+.container aside .profile-content .image-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container aside .profile-content .image-name img {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 50%;
+  transition: width 0.75s ease;
+}
+.container aside .profile-content .image-name > span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.container aside .profile-content .image-name > i[id="showHideStatus"] {
+  cursor: pointer;
+}
+
+.container aside .profile-content .image-name > i.fa-circle {
+  margin-left: 10px;
+  color: rgb(20, 233, 48);
+  font-size: 0.8em;
+}
+.container aside .profile-content .status {
+  display: none;
+  margin: 10px;
+  font-size: 0.9em;
+}
+.container aside .profile-content .status .level {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.container aside menu {
+  margin: 0;
+  padding: 5px;
+}
+.container aside menu .menu-item {
+  display: flex;
+  padding: 20px 15px 20px 20px;
+  gap: 20px;
+  cursor: pointer;
+}
+.container aside menu .menu-item:hover {
+  background-color: #eee;
+}
+.container aside menu .menu-item:hover i {
+  color: #059bff;
+}
+.container aside menu .menu-item:hover span {
+  color: #059bff;
+}
+.container aside menu .menu-item > i {
+  margin: 0;
+  font-size: 1.5em;
+}
+.container aside menu .menu-item > span {
+  font-weight: bold;
+}
+
+/* main section */
+.container main {
+  width: 100%;
+  display: flex;
+}
+.container main .main-left {
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.container main .mini-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+.container main .mini-cards .mini-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+}
+.container main .mini-cards .mini-card .icon {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 0 5px 5px 0;
+}
+.container main .mini-cards .mini-card .icon > i {
+  font-size: 1.5em;
+  color: #059bff;
+}
+.container main .mini-cards .mini-card > .content {
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  margin: auto;
+}
+.container main .mini-cards .mini-card > .content .name {
+  color: #059bff;
+}
+.container main .mini-cards .mini-card > .content .amount {
+  margin-top: 5px;
+}
+.container main .mini-cards .mini-card > .content > span {
+  display: block;
+  text-align: center;
+}
+.container main .chart-container {
+  background-color: white;
+  margin-top: 20px;
+}
+.container main .chart-container > .head {
+  display: flex;
+  padding: 5px 20px;
+  background-color: #eee;
+  align-items: center;
+  gap: 10px;
+}
+
+.container main .chart-container > .head > i {
+  cursor: pointer;
+}
+.container main .chart-container > .head > i.fa-gear {
+  margin-right: auto;
+}
+.container main .chart-container .chart {
+  width: 60%;
+  margin: auto;
+}
+.container main .chart-container .chart canvas {
+  margin: auto;
+  width: 90% !important;
+  height: 90% !important;
+}
+
+@media screen and (min-width: 425px) {
+  .container main .mini-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container aside {
+    display: block;
+    position: static;
+    width: 120px;
+  }
+  .container aside .profile-content {
+    display: block;
+  }
+  .menu-item-name,
+  #userName,
+  #statusCircle,
+  #showHideStatus {
+    display: none;
+  }
+  .container aside menu .menu-item > i {
+    margin: auto;
+    font-size: 2em;
+  }
+  #profileImage {
+    width: 80%;
+  }
+
+  .container main .mini-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .container header .settings {
+    display: flex;
+  }
+  .container header .search-bar {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 280px 1fr;
+  }
+  .container aside {
+    display: block;
+    width: 250px;
+  }
+  #showHideMenu,
+  .menu-item-name,
+  #userName,
+  #statusCircle {
+    display: block;
+  }
+  .container aside menu .menu-item > i {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  #profileImage {
+    width: 50%;
+  }
+}
